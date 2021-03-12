@@ -1,0 +1,13 @@
+.author_attribution {
+    font-size: small;
+    font-weight: bold;
+}
+
+.output {
+    margin-bottom: 5px;
+    font-size: large;
+}
+
+.quote-link .output {
+    color: black;
+}

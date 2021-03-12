@@ -1,0 +1,14 @@
+.title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.topic_button {
+    display: block;
+    width: 100%;
+}
+
+.topic_button {
+    padding: 30px 0px 30px 0px;
+    font-size: large;
+}
