@@ -19,6 +19,10 @@
     font-size: 48px!important;
 }
 
+#mobile-share {
+    display:none;
+}
+
 .output {
     margin-bottom: 5px;
     font-size: 16px;

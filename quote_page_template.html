@@ -37,9 +37,15 @@
                 <div class="card">
                     <div class="card-body quote-body">
                         <div class="row pb-3">
+                            <div class="col-1">
+                                <a class="fa fa-arrow-left" accesskey="a" title="Previous quote by 'author'" href="quote_page_template.html"></a>
+                            </div>
                             <div class="col">
                                 <div class="MayaAngelou_ID1 main-output"></div>
                                 <div class="authorMayaAngelou"></div>
+                            </div>
+                            <div class="col-1">
+                                <a class="fa fa-arrow-right" accesskey="d" title="Next quote by 'author'" href="quote_page_template.html"></a>
                             </div>
                         </div>
                         <div class="row">
@@ -61,7 +67,7 @@
                     <!-- <div class="col col-lg-12 pb-3">
                         <div class="card">
                             <div class="card-header text-center">
-                                More Quotes by <a href="author_page_template.html" class="font-weight-bold">Author</a>:
+                                More Quotes by <a href="author_page_template.html" class="font-weight-bold">Author</a>
                             </div>
                             <div class="card-body pb-4">
                                 <p><a href="#" class="quote-link">"<span class="MayaAngelou_ID1"></span>"</a></p>
@@ -73,7 +79,7 @@
                     <div class="col col-lg-12 pb-4">
                         <div class="card">
                             <div class="card-header text-center">
-                                More Quotes about <a href="topic_page_template.html" class="font-weight-bold">topic</a>:
+                                More Quotes about <a href="topic_page_template.html" class="font-weight-bold">topic</a>
                             </div>
                             <div class="card-body pb-4">
                                 <p><a href="#" class="quote-link">"<span class="MayaAngelou_ID1"></span>"</a></p>
@@ -96,6 +102,10 @@
     <script src="databank_topic.js"></script>
     <!-- <script src="navbar.js"></script> -->
     <script>
+        if(/Edge/.test(navigator.userAgent)) {
+            $("#mobile-share").css("display","block!important");
+        }
+
         let shareData = {
             title: 'Share quotes from WEBSITENAME',
             text: 'Share quotes from WEBSITENAME',
