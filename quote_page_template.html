@@ -37,14 +37,14 @@
                 <div class="card">
                     <div class="card-body quote-body">
                         <div class="row pb-3">
-                            <div class="col-1">
+                            <div class="col-1 d-none d-md-block">
                                 <a class="fa fa-arrow-left" accesskey="a" title="Previous quote by 'author'" href="quote_page_template.html"></a>
                             </div>
                             <div class="col">
                                 <div class="MayaAngelou_ID1 main-output"></div>
                                 <div class="authorMayaAngelou"></div>
                             </div>
-                            <div class="col-1">
+                            <div class="col-1 d-none d-md-block">
                                 <a class="fa fa-arrow-right" accesskey="d" title="Next quote by 'author'" href="quote_page_template.html"></a>
                             </div>
                         </div>
@@ -102,8 +102,25 @@
     <script src="databank_topic.js"></script>
     <!-- <script src="navbar.js"></script> -->
     <script>
-        if(window.navigator.userAgent.indexOf("Edge/") > -1) {
-            $("#mobile-share").css("display","block!important");
+        var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+        var isFirefox = typeof InstallTrigger !== 'undefined';
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && window['safari'].pushNotification));
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+        var isEdge = !isIE && !!window.StyleMedia;
+        var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+        var isEdgeChromium = isChrome && (navigator.userAgent.indexOf("Edg") != -1);
+        var isBlink = (isChrome || isOpera) && !!window.CSS;
+        console.log(isOpera);
+        console.log(isFirefox);
+        console.log(isSafari);
+        console.log(isIE);
+        console.log(isEdge);
+        console.log(isChrome);
+        console.log(isEdgeChromium);
+        console.log(isBlink);
+        if(isEdge || isEdgeChromium || isSafari) {
+            console.log("Function correct");
+            $("#mobile-share").css("display","inline!important");
         }
 
         let shareData = {
