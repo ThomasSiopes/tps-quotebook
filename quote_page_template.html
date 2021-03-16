@@ -102,7 +102,7 @@
     <script src="databank_topic.js"></script>
     <!-- <script src="navbar.js"></script> -->
     <script>
-        if(/Edge/.test(navigator.userAgent)) {
+        if(window.navigator.userAgent.indexOf("Edge/") > -1) {
             $("#mobile-share").css("display","block!important");
         }
 
