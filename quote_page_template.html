@@ -126,7 +126,7 @@
             return check;
         };
 
-        if(isEdge || isEdgeChromium || isSafari || window.mobileCheck) {
+        if(isEdge || isEdgeChromium || isSafari || window.mobileCheck()) {
             console.log("Function correct");
             $("#mobile-share").css("display","inline");
         }
