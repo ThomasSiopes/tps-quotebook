@@ -6,11 +6,11 @@ document.getElementsByTagName('meta')["twitter:image"].content="#" //file path t
 document.getElementsByTagName('meta')["twitter:site"].content="@quotesite" // @"name of website"
 
 // Facebook / Parler / Twitter
-// document.getElementsByTagName('meta')["og:title"].content="Quote" //title of share card
-// document.getElementsByTagName('meta')["og:url"].content="#" //url of page being shared
-// document.getElementsByTagName('meta')["og:type"].content="website" //no touch
-// document.getElementsByTagName('meta')["og:image"].content="#" //file path to icon image
-// document.getElementsByTagName('meta')["og:description"].content="Test text" ///description or quote
+document.getElementsByTagName('meta')["og:title"].content="Quote" //title of share card
+document.getElementsByTagName('meta')["og:url"].content="#" //url of page being shared
+document.getElementsByTagName('meta')["og:type"].content="website" //no touch
+document.getElementsByTagName('meta')["og:image"].content="#" //file path to icon image
+document.getElementsByTagName('meta')["og:description"].content="Test text" ///description or quote
 
 $(function(){
     $("#navigationbar").load("./navbar_info.html");
