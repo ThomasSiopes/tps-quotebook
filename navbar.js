@@ -37,6 +37,9 @@ var html = '<nav class="navbar navbar-expand-md navbar-dark bg-crimson">\
                     <a class="nav-link" href="category_navigation.html">Categories</a>\
                   </li>\
                 </ul>\
+                <form class="d-flex">\
+                  <input type="submit" value="Google Search">\
+                </form>\
               </div>\
             </nav>'
 
